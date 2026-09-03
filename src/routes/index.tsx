@@ -32,7 +32,35 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const nav = ["Home", "About", "Work", "Services", "Process", "Contact"];
+const nav = ["Home", "About", "Work", "Services", "Process", "FAQ", "Contact"];
+
+const faqs = [
+  {
+    no: "01",
+    q: "How fast can you deliver?",
+    a: "Most projects are delivered within 3–7 business days, depending on the scope and complexity. Larger projects may require additional time.",
+  },
+  {
+    no: "02",
+    q: "Do you work with early-stage startups or only established companies?",
+    a: "We work with both early-stage startups and established companies. If you have a great product or idea and need high-quality creative work, we're happy to help.",
+  },
+  {
+    no: "03",
+    q: "Who owns the final files?",
+    a: "You do. Once the project is completed and payment is made, you receive full ownership of the final deliverables and files.",
+  },
+  {
+    no: "04",
+    q: "How many revisions do I get?",
+    a: "You get up to 2 rounds of revisions included with each project. Additional revisions can be arranged if needed.",
+  },
+  {
+    no: "05",
+    q: "Do you work with non-YC startups?",
+    a: "Yes. YC is just one part of our client base. We also work with independent founders, early-stage startups, SaaS companies, and established businesses.",
+  },
+];
 
 const reels = [
   {
