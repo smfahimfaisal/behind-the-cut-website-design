@@ -87,8 +87,8 @@ export function ContactDialog({ children }: { children: ReactNode }) {
           <a href={`mailto:${EMAIL}`} className="flex items-center gap-2 hover:text-foreground">
             <Mail className="h-3.5 w-3.5" /> {EMAIL}
           </a>
-          <a href="tel:01782017981" className="flex items-center gap-2 hover:text-foreground">
-            <Phone className="h-3.5 w-3.5" /> 01782017981
+          <a href="tel:+8801782017981" className="flex items-center gap-2 hover:text-foreground">
+            <Phone className="h-3.5 w-3.5" /> +880 17820-17981
           </a>
           <span className="flex items-center gap-2">
             <MapPin className="h-3.5 w-3.5" /> Nalchity Upazila, Bangladesh
