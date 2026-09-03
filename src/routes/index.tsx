@@ -289,6 +289,32 @@ function Index() {
           </div>
         </section>
 
+        <section id="faq" className="mx-auto max-w-6xl px-6 py-16">
+          <div className="grid gap-10 md:grid-cols-[280px_1fr]">
+            <div>
+              <p className="eyebrow">Good To Know</p>
+              <h2 className="mt-3 text-4xl">Frequently Asked Questions</h2>
+            </div>
+            <Accordion type="single" collapsible className="w-full">
+              {faqs.map((f) => (
+                <AccordionItem key={f.no} value={f.no}>
+                  <AccordionTrigger className="text-left text-base">
+                    <span className="flex gap-4">
+                      <span className="text-muted-foreground">{f.no} |</span>
+                      <span>{f.q}</span>
+                    </span>
+                  </AccordionTrigger>
+                  <AccordionContent className="text-sm leading-relaxed text-muted-foreground">
+                    {f.a}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          </div>
+        </section>
+
+
+
         <section id="contact" className="mx-auto max-w-6xl px-6 pb-20">
           <div className="grid gap-10 rounded-2xl bg-ink px-8 py-12 text-ink-foreground md:grid-cols-2 md:px-12">
             <div>
