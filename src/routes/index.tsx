@@ -297,12 +297,14 @@ function Index() {
               <h2 className="mt-4 text-4xl leading-tight">
                 Got footage? We'll make it worth watching.
               </h2>
-              <a
-                href="mailto:behindthecut12@gmail.com"
-                className="mt-8 inline-flex items-center gap-2 rounded-md bg-cream px-6 py-3.5 text-[11px] tracking-[0.16em] uppercase text-primary transition-transform hover:-translate-y-0.5"
-              >
-                Let's Talk <ArrowRight className="h-3.5 w-3.5" />
-              </a>
+              <ContactDialog>
+                <button
+                  type="button"
+                  className="mt-8 inline-flex items-center gap-2 rounded-md bg-cream px-6 py-3.5 text-[11px] tracking-[0.16em] uppercase text-primary transition-transform hover:-translate-y-0.5"
+                >
+                  Let's Talk <ArrowRight className="h-3.5 w-3.5" />
+                </button>
+              </ContactDialog>
             </div>
             <dl className="grid content-center gap-6 text-sm md:border-l md:border-white/15 md:pl-12">
               <div className="flex items-start gap-3">
