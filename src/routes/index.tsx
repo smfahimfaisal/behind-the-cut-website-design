@@ -8,10 +8,11 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import logo from "@/assets/logo.jpg.asset.json";
-import reel1 from "@/assets/reel-1.mp4.asset.json";
-import reel2 from "@/assets/reel-2.mp4.asset.json";
-import reel3 from "@/assets/reel-3.mp4.asset.json";
+
+const logo = { url: "/favicon.png" };
+const reel1 = { url: "/reel-1.mp4" };
+const reel2 = { url: "/reel-2.mp4" };
+const reel3 = { url: "/reel-3.mp4" };
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -296,7 +297,7 @@ function Index() {
             {testimonials.map((t) => (
               <figure key={t.name} className="rounded-xl border border-border bg-card p-7">
                 <blockquote className="text-sm leading-relaxed text-muted-foreground">
-                  “{t.quote}”
+                  "{t.quote}"
                 </blockquote>
                 <figcaption className="mt-6">
                   <p className="text-sm">{t.name}</p>
