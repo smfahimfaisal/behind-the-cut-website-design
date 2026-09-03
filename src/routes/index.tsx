@@ -9,11 +9,6 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-const logo = { url: "/favicon.png" };
-const reel1 = { url: "/reel-1.mp4" };
-const reel2 = { url: "/reel-2.mp4" };
-const reel3 = { url: "/reel-3.mp4" };
-
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
@@ -65,17 +60,17 @@ const faqs = [
 
 const reels = [
   {
-    src: reel1.url,
+    src: "/reel-1.mp4",
     title: "What I Can Do",
     kind: "Short-form, Motion Graphics",
   },
   {
-    src: reel2.url,
+    src: "/reel-2.mp4",
     title: "Your Standards Decide Your Future",
     kind: "Talking Head, Sound Design",
   },
   {
-    src: reel3.url,
+    src: "/reel-3.mp4",
     title: "App Promo Animation",
     kind: "Promo, 2D Animation",
   },
@@ -165,7 +160,7 @@ function Index() {
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
           <a href="#home" className="flex items-center gap-3">
             <img
-              src={logo.url}
+              src="/favicon.png"
               alt="Behind the Cut logo"
               className="h-9 w-9 rounded-md object-cover"
             />
@@ -348,8 +343,6 @@ function Index() {
           </div>
         </section>
 
-
-
         <section id="contact" className="mx-auto max-w-6xl px-6 pb-20">
           <div className="grid gap-10 rounded-2xl bg-ink px-8 py-12 text-ink-foreground md:grid-cols-2 md:px-12">
             <div>
@@ -398,7 +391,7 @@ function Index() {
       <footer className="border-t border-border py-10">
         <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-6 px-6">
           <div className="flex items-center gap-3">
-            <img src={logo.url} alt="" className="h-8 w-8 rounded-md object-cover" />
+            <img src="/favicon.png" alt="" className="h-8 w-8 rounded-md object-cover" />
             <span className="text-sm font-bold tracking-[0.18em]">BEHIND THE CUT</span>
           </div>
           <nav className="flex flex-wrap gap-6">
