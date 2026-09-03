@@ -2,6 +2,12 @@ import { createFileRoute } from "@tanstack/react-router";
 import { ArrowRight, Film, Scissors, Wand2, Music4, Mail, Phone, MapPin } from "lucide-react";
 
 import { ContactDialog } from "@/components/ContactDialog";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import logo from "@/assets/logo.jpg.asset.json";
 import reel1 from "@/assets/reel-1.mp4.asset.json";
 import reel2 from "@/assets/reel-2.mp4.asset.json";
