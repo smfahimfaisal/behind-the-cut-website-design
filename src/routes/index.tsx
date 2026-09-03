@@ -298,7 +298,7 @@ function Index() {
                 Got footage? We'll make it worth watching.
               </h2>
               <a
-                href="mailto:hello@behindthecut.studio"
+                href="mailto:behindthecut12@gmail.com"
                 className="mt-8 inline-flex items-center gap-2 rounded-md bg-cream px-6 py-3.5 text-[11px] tracking-[0.16em] uppercase text-primary transition-transform hover:-translate-y-0.5"
               >
                 Let's Talk <ArrowRight className="h-3.5 w-3.5" />
@@ -316,14 +316,14 @@ function Index() {
                 <Phone className="mt-0.5 h-4 w-4 opacity-70" />
                 <div>
                   <dt className="text-[10px] tracking-[0.2em] uppercase opacity-70">Phone</dt>
-                  <dd>+880 1700 000000</dd>
+                  <dd>01782017981</dd>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <MapPin className="mt-0.5 h-4 w-4 opacity-70" />
                 <div>
                   <dt className="text-[10px] tracking-[0.2em] uppercase opacity-70">Location</dt>
-                  <dd>Dhaka, Bangladesh — working worldwide</dd>
+                  <dd>Nalchity Upazila, Bangladesh</dd>
                 </div>
               </div>
             </dl>
