@@ -309,7 +309,7 @@ function Index() {
                 <Mail className="mt-0.5 h-4 w-4 opacity-70" />
                 <div>
                   <dt className="text-[10px] tracking-[0.2em] uppercase opacity-70">Email</dt>
-                  <dd>hello@behindthecut.studio</dd>
+                  <dd>behindthecut12@gmail.com</dd>
                 </div>
               </div>
               <div className="flex items-start gap-3">
