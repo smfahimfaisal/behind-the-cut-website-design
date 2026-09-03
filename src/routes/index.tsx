@@ -2,6 +2,12 @@ import { createFileRoute } from "@tanstack/react-router";
 import { ArrowRight, Film, Scissors, Wand2, Music4, Mail, Phone, MapPin } from "lucide-react";
 
 import { ContactDialog } from "@/components/ContactDialog";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import logo from "@/assets/logo.jpg.asset.json";
 import reel1 from "@/assets/reel-1.mp4.asset.json";
 import reel2 from "@/assets/reel-2.mp4.asset.json";
@@ -26,7 +32,35 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const nav = ["Home", "About", "Work", "Services", "Process", "Contact"];
+const nav = ["Home", "About", "Work", "Services", "Process", "FAQ", "Contact"];
+
+const faqs = [
+  {
+    no: "01",
+    q: "How fast can you deliver?",
+    a: "Most projects are delivered within 3–7 business days, depending on the scope and complexity. Larger projects may require additional time.",
+  },
+  {
+    no: "02",
+    q: "Do you work with early-stage startups or only established companies?",
+    a: "We work with both early-stage startups and established companies. If you have a great product or idea and need high-quality creative work, we're happy to help.",
+  },
+  {
+    no: "03",
+    q: "Who owns the final files?",
+    a: "You do. Once the project is completed and payment is made, you receive full ownership of the final deliverables and files.",
+  },
+  {
+    no: "04",
+    q: "How many revisions do I get?",
+    a: "You get up to 2 rounds of revisions included with each project. Additional revisions can be arranged if needed.",
+  },
+  {
+    no: "05",
+    q: "Do you work with non-YC startups?",
+    a: "Yes. YC is just one part of our client base. We also work with independent founders, early-stage startups, SaaS companies, and established businesses.",
+  },
+];
 
 const reels = [
   {
@@ -288,6 +322,32 @@ function Index() {
             ))}
           </div>
         </section>
+
+        <section id="faq" className="mx-auto max-w-6xl px-6 py-16">
+          <div className="grid gap-10 md:grid-cols-[280px_1fr]">
+            <div>
+              <p className="eyebrow">Good To Know</p>
+              <h2 className="mt-3 text-4xl">Frequently Asked Questions</h2>
+            </div>
+            <Accordion type="single" collapsible className="w-full">
+              {faqs.map((f) => (
+                <AccordionItem key={f.no} value={f.no}>
+                  <AccordionTrigger className="text-left text-base">
+                    <span className="flex gap-4">
+                      <span className="text-muted-foreground">{f.no} |</span>
+                      <span>{f.q}</span>
+                    </span>
+                  </AccordionTrigger>
+                  <AccordionContent className="text-sm leading-relaxed text-muted-foreground">
+                    {f.a}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          </div>
+        </section>
+
+
 
         <section id="contact" className="mx-auto max-w-6xl px-6 pb-20">
           <div className="grid gap-10 rounded-2xl bg-ink px-8 py-12 text-ink-foreground md:grid-cols-2 md:px-12">
